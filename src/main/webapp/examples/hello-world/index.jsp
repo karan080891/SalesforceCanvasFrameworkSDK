@@ -37,6 +37,7 @@
             // Save the token
             Sfdc.canvas.oauth.token(sr.oauthToken);
             Sfdc.canvas.byId('username').innerHTML = sr.context.user.fullName;
+            Sfdc.canvas.byId('email').innerHTML = sr.context.user.email;
         });
 
     </script>
@@ -44,5 +45,7 @@
 <body>
     <br/>
     <h1>Hello <span id='username'></span></h1>
+    <h1>Hello <span id='email'></span></h1>
+    
 </body>
 </html>
